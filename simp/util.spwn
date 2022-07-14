@@ -12,3 +12,7 @@ let hex = (int) {
   }
   return returnVal;
 }
+
+return {
+  hex: hex
+}
