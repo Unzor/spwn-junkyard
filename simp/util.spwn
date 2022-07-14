@@ -1,0 +1,14 @@
+let hex = (int) {
+  let int = int
+  let letters = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
+  let returnVal = "";
+  base = 16
+  if (base > 1 && base < 37) {
+    while (int != 0) {
+      rest = int % base;
+      int = $.floor(int / base);
+      returnVal = letters[rest].lowercase() + returnVal;
+    }
+  }
+  return returnVal;
+}
